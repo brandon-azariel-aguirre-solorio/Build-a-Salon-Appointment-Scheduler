@@ -1,4 +1,3 @@
-
 #!/bin/bash
 PSQL="psql -X --username=freecodecamp --dbname=salon --tuples-only -c"
 echo -e "\n~~~~~ MY SALON ~~~~~\n"
@@ -12,7 +11,7 @@ MAIN_MENU() {
   
   echo "$AVAILABLE_SERVICES" | while read SERVICE_ID BAR NAME
   do
-    echo "$SERVICE_ID) $NAME" | sed 's/ //g' 
+    echo "$SERVICE_ID) $NAME"  
   done
 
   read SERVICE_ID_SELECTED
